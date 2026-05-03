@@ -23,11 +23,11 @@ interface SidebarUser {
 
 const navItems = [
   { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { label: "Expenses", href: "/dashboard/expenses", icon: Receipt },
-  { label: "Budgets", href: "/dashboard/budgets", icon: Wallet },
-  { label: "Recurring", href: "/dashboard/recurring", icon: RefreshCw },
-  { label: "Categories", href: "/dashboard/categories", icon: Tag },
-  { label: "Settings", href: "/dashboard/settings", icon: Settings },
+  { label: "Expenses", href: "/expenses", icon: Receipt },
+  { label: "Budgets", href: "/budgets", icon: Wallet },
+  { label: "Recurring", href: "/recurring", icon: RefreshCw },
+  { label: "Categories", href: "/categories", icon: Tag },
+  { label: "Settings", href: "/settings", icon: Settings },
 ];
 
 export default function Sidebar({ user }: { user: SidebarUser }) {

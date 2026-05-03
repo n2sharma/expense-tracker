@@ -6,10 +6,10 @@ import { redirect } from "next/navigation";
 export default async function LandingPage() {
   // If already logged in, skip the landing page entirely
   const session = await auth();
-  if (session) redirect("/dashboard");
+  // if (session) redirect("/dashboard");
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
+    <main className="min-h-screen bg-linear-to-br from-slate-900 to-slate-800">
       {/* Navbar */}
       <nav className="flex items-center justify-between px-8 py-5 max-w-6xl mx-auto">
         <span className="text-white font-bold text-xl">💰 ExpenseAI</span>
